@@ -1,0 +1,10 @@
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+}

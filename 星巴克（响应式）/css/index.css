@@ -1,0 +1,139 @@
+#nav {
+  position: fixed;
+  width: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+}
+#nav .container {
+  width: 100%;
+  height: 100%;
+}
+.container .header {
+  position: relative;
+  height: 48px;
+  padding: 24px;
+  box-sizing: content-box;
+}
+.container .header .nav-menu {
+  width: 24px;
+  height: 24px;
+  float: right;
+  padding: 6px 0;
+  white-space: nowrap;
+  margin-right: 12px;
+}
+.container .header .nav-menu img {
+  display: block;
+}
+.container .logo {
+  float: left;
+  width: 36px;
+  height: 36px;
+}
+.container .primary {
+  display: inline-block;
+}
+.container .primary ul {
+  display: inline-block;
+  white-space: nowrap;
+}
+.container .primary ul li {
+  white-space: nowrap;
+}
+.container .primary a {
+  /*必须转化为会计元素，不然margin只能设置左右，不能设置上下*/
+  color: inherit;
+  font-weight: 700;
+  display: block;
+  padding: 5px 10px 5px;
+  letter-spacing: 1px; /*---*/
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.container .primary .stores {
+  float: left;
+  white-space: nowrap;
+}
+
+.container .body {
+  width: 100%;
+  height: calc(100% - 98px);
+  display: table; /*动态实现垂直居中*/
+}
+.body .account {
+  vertical-align: middle; /*动态实现垂直居中*/
+  padding: 0 24px 0 84px;
+  display: table-cell; /*动态实现垂直居中*/
+  height: 100%;
+}
+
+.body .account .data .display-1 {
+  margin-bottom: 24px;
+}
+.body .account .data .display-1 span {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+.body footer .sign {
+  float: left;
+  margin-right: 24px;
+  padding: 3px 0;
+}
+.body footer .sign img {
+  margin-right: 4px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+.body footer .register {
+  float: left;
+  padding: 2px 12px;
+  border: 1px solid #00a862;
+  border-radius: 48px;
+}
+.body footer a {
+  color: #00a862;
+}
+
+
+
+
+#content {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  margin-left: 30%;
+  bottom: 0;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  left: auto;
+}
+
+#content .hero{
+    margin-top: -24px;
+}
+
+#content .promotion{
+    padding: 24px 0;
+    background: #f7f7f7;
+}
+
+#content .promotion .grid{
+    display: flex;
+    margin: -12px;
+}
+#content .promotion .grid a{
+    flex-grow: 1;
+    padding: 12px;
+}
+#content .promotion .grid a img{
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+#content .promotion .grid a img:hover{
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
